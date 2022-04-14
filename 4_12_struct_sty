@@ -1,0 +1,20 @@
+#define _CRT_SECURE_NO_WARMINGS 1
+#include <stdio.h>//strand input output
+#include <string.h>
+
+
+struct Book
+{
+   char name[20];
+   short price;
+};
+
+int main()
+{
+	struct Book b1 = {"C language",55};
+   printf("name:%s\n",b1.name);
+   printf("Price:%d$\n",b1.price);
+   b1.price = 15;
+   printf("New Price:%d$\n",b1.price);
+   return 0;
+}
