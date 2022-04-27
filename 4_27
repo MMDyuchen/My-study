@@ -1,0 +1,58 @@
+#define _CRT_SECURE_NO_WARMINGS 1
+#include<stdio.h>
+#include<string.h>
+#include<windows.h>
+#include <stdlib.h>
+int main()
+{
+	int x = 0;
+	int y = 0;
+	int z = x + y;
+	printf("%d\n",z);
+	return 0;
+}
+
+
+#define _CRT_SECURE_NO_WARMINGS 1
+#include<stdio.h>
+#include<string.h>
+#include<windows.h>
+#include <stdlib.h>
+
+int Fib(int n)
+{
+	int a = 1;
+	int b =1;
+	int c = 1;
+	while(n>2)
+	{
+		c=a+b;
+		a=b;
+		b=c;
+		n--;
+	}
+	return c;
+}
+int main()
+{
+	int n= 0;
+	int ret = 0;
+	scanf("%d",&n);
+	ret = Fib(n);
+	printf("%d ",ret);
+	return 0;
+}
+
+//比较四个结果
+int main()
+{
+	char arr1[]="abc";
+	char arr2[]={'a','b','c'};
+	printf("%d\n",sizeof(arr1));//4
+	printf("%d\n",sizeof(arr2));//3
+	printf("%d\n",strlen(arr1));//3
+	printf("%d\n",strlen(arr2));//随机值
+	return 0;
+}
+
+
